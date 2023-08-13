@@ -1,3 +1,13 @@
+// Configuration
+@import "../node_modules/bootstrap/scss/functions";
+//custimer
+@import "../scss/utils/variables";
+@import "../scss/utils/variables-dark";
+//bootstrap 等同於把所有的bs 5 scss 全部載入
+@import "../../node_modules/bootstrap";
+
+
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
