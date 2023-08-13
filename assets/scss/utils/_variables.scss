@@ -310,8 +310,9 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
+  "primary":    #030303, //customer $primary,
+  "secondary":  #FBFF22, //customer $secondary,
+  "tertiary":   #C96464, //customer 
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -413,9 +414,24 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75, //customer
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  13: $spacer * 3.25,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
+  16: $spacer * 4,
+  17: $spacer * 4.25,
+  18: $spacer * 4.5,
+  19: $spacer * 4.75,
+  20: $spacer * 5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -454,8 +470,8 @@ $body-emphasis-color:       $black !default;
 $link-color:                              $primary !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
-$link-hover-decoration:                   null !default;
+$link-hover-color:                        $secondary !default; //customer shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:                   none !default; //customer null !default;
 
 $stretched-link-pseudo-element:           after !default;
 $stretched-link-z-index:                  1 !default;
@@ -473,7 +489,7 @@ $icon-link-icon-transform:    translate3d(.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0 !default; //customer 1rem !default;
 
 
 // Grid breakpoints
@@ -631,12 +647,20 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 4 !default; //customer 2.5
+$h2-font-size:                $font-size-base * 3.75 !default; //60px
+$h3-font-size:                $font-size-base * 3.5 !default; //56px
+$h4-font-size:                $font-size-base * 3.25 !default; //52px
+$h5-font-size:                $font-size-base * 3 !default; //48px
+$h6-font-size:                $font-size-base * 2.75 !default; //44px
+$h7-font-size:                $font-size-base * 2.5 !default; //40px
+$h8-font-size:                $font-size-base * 2.25 !default; //36px
+$h9-font-size:                $font-size-base * 2 !default; //32px
+$h10-font-size:                $font-size-base * 1.75 !default; //28px
+$h11-font-size:                $font-size-base * 1.5 !default; //24px
+$h12-font-size:                $font-size-base * 1.25 !default; //20px
+$h13-font-size:                $font-size-base !default;
+$h14-font-size:                $font-size-base * .875 !default; //14px
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -646,7 +670,15 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
+  11: $h11-font-size,
+  12: $h12-font-size,
+  13: $h13-font-size,
+  14: $h14-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
