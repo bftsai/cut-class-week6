@@ -1,0 +1,27 @@
+@include lg{
+    .index{
+        .banner{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true) center center no-repeat;
+            background-size: cover;
+            .fw-bold{
+                margin-top: 279px;
+            }
+            .mt-lg-4{
+                width: 66.666667%;
+            }
+        }
+        .explore{
+            .card{
+                background-color: #F3F1E5;
+                padding: 35px 0;
+            }
+            img{
+                width: 40.8163%;
+            }
+            .more{
+                padding: 38px 0;
+                line-height: 1.2;
+            }
+        }
+    }
+}
