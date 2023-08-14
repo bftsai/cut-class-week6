@@ -1,9 +1,11 @@
 // Configuration
 @import "../node_modules/bootstrap/scss/functions";
 //custimer
-@import "../scss/utils/variables";
-@import "../scss/utils/variables-dark";
+@import "./utils/variables";
+@import "./utils/variables-dark";
+@import "./utils/maps";
 @import "./base/mixins";
+@import "./utils/utilities";
 //bootstrap 等同於把所有的bs 5 scss 全部載入
 @import "../../node_modules/bootstrap";
 
@@ -16,10 +18,8 @@
 @import './pages/index.scss';
 
 body{
-    background-color: #F3F1E5;
     word-break: break-word;
-    overflow-wrap: break-word;
-}
-a{
-    display: block;
+    a{
+        display: block;
+    }
 }

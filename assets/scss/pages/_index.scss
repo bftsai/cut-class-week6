@@ -14,13 +14,78 @@
             .card{
                 background-color: #F3F1E5;
                 padding: 35px 0;
+                &:hover{
+                    color: $secondary;
+                    cursor: pointer;
+                }
             }
             img{
-                width: 40.8163%;
+                width: 41.66667%;
             }
             .more{
-                padding: 38px 0;
-                line-height: 1.2;
+                padding: 39px 0;
+                line-height: 60px;
+                &:hover{
+                    background-color: $primary;
+                    color: $secondary;
+                }
+            }
+        }
+        .recent{
+            .card-img-top{
+                height: 255px;
+            }
+            .card-footer{
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+                a{
+                    padding: 0 10px;
+                    &:hover{
+                        color: $primary;
+                        background-color: $secondary;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .online{
+            .btn-group{
+                button{
+                    border: 1px solid $primary;
+                    border-width: 2px 2px 2px 4px;
+                }
+                button:hover{
+                    border-left: 4px solid $secondary;
+                    background-color: $primary;
+                    color: #FFF;
+                }
+            }
+            .img{
+                overflow: hidden;
+                img{
+                    top: -100%;
+                    left: -3%;
+                }
+            }
+            .w-100:hover{
+                color: $secondary;
+            }
+        }
+        .albums1,.albums2{
+            .container{
+                //overflow: hidden;
+            }
+            p{
+                top: 0%;
+                letter-spacing: 3.2px;
+            }
+            .p1{
+                left: -4.3%;
+            }
+            .p2{
+                left: -7.5%;
             }
         }
     }

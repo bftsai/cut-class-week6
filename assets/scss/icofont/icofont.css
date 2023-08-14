@@ -88,6 +88,16 @@ url("./fonts/icofont.woff") format("woff");
   content: "\f021";
 }
 
+.icofont-rounded-double-right:before
+{
+  content: "\ea98";
+}
+
+.icofont-rounded-double-left:before
+{
+  content: "\ea97";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {
