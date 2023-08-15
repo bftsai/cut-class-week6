@@ -1,4 +1,12 @@
-
+.header{
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .input-group{
+        width: 58.974359%;
+    }
+}
 @include lg{
     .header{
         .logo{

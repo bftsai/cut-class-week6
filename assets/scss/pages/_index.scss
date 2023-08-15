@@ -1,8 +1,163 @@
+.index{
+    .banner{
+        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true) center center no-repeat;
+        background-size: cover;
+        h1{
+            padding-right: 186px;
+        }
+        .fw-bold{
+            margin-top: 210px;
+        }
+    }
+    .explore{
+        img{
+            width: 40px;
+        }
+        .more{
+            line-height: 32px;
+            padding: 24px 0;
+        }
+        .card:hover{
+            background-color: $secondary;
+            //color: $secondary;
+            //cursor: pointer;
+        }
+        .more:hover{
+            background-color: $primary;
+            color: $secondary;
+        }
+    }
+    .recent{
+        .card-img-top{
+            height: 255px;
+            object-fit: cover;
+        }
+        .card-footer{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+            a:hover{
+                color: $primary;
+                span{
+                    background-color: $secondary;
+                }
+            }
+        }
+        .btn-close{
+            right: 3.418803%;
+        }
+        .modal-title{
+            letter-spacing: 1.2px;
+        }
+    }
+    .online{
+        .img{
+            overflow: hidden;
+            height: 158px;
+            img{
+                top: -93%;
+                left: -2%;
+            }
+        }
+        .w-100:hover{
+            color: $secondary;
+        }
+        .btn-group{
+            button{
+                border: 1px solid $primary;
+                border-width: 2px 2px 2px 4px;
+            }
+            button:hover{
+                border-left: 4px solid $secondary;
+                background-color: $primary;
+                color: #FFF;
+            }
+        }
+    }
+    .albums1,.albums2{
+        p{
+            top: 0%;
+            letter-spacing: 3.2px;
+        }
+        .p1{
+            left: -4.3%;
+        }
+        .p2{
+            left: -7.5%;
+        }
+    }
+    .activity{
+        img{
+            height: 267px;
+            object-fit: cover;
+        }
+        h4{
+            transform: translate(-50%, -50%) rotate(-4deg);
+        }
+        li:nth-child(2){
+            h4{
+                transform: translate(-50%, -50%) rotate(-3deg);
+            }
+        }
+        li:nth-child(even){
+            transform: rotate(-2deg);
+        }
+        li:nth-child(3){
+            transform: rotate(2deg);
+        }
+    }
+    .promote{
+        .mail,.phone,.fb{
+            .bg-primary{
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+            }
+        }
+        a:hover,button:hover{
+            color: $secondary;
+            span{
+                color: $secondary;
+            }
+        }
+        input{
+            width: 94.236311%;
+        }
+    }
+}
+@include sm{
+    .index{
+        .online{
+            .img{
+                height: 269px;
+                img{
+                    top: -68%;
+                    left: -2.5%;
+                }
+            }
+        }
+    }
+}
+@include md{
+    .index{
+        .online{
+            .img{
+                height: 245px;
+                img{
+                    top: -130%;
+                    left: -2.5%;
+                }
+            }
+        }
+    }
+}
 @include lg{
     .index{
         .banner{
-            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true) center center no-repeat;
-            background-size: cover;
+            h1{
+                padding-right: 0;
+            }
             .fw-bold{
                 margin-top: 279px;
             }
@@ -13,21 +168,12 @@
         .explore{
             .card{
                 padding: 35px 0;
-                &:hover{
-                    color: $secondary;
-                    cursor: pointer;
-                }
             }
             img{
                 width: 41.66667%;
             }
             .more{
-                padding: 39px 0;
-                line-height: 60px;
-                &:hover{
-                    background-color: $primary;
-                    color: $secondary;
-                }
+                line-height: 51.496px;
             }
         }
         .recent{
@@ -38,12 +184,6 @@
                 img{
                     width: 24px;
                     height: 24px;
-                }
-                a:hover{
-                    color: $primary;
-                    span{
-                        background-color: $secondary;
-                    }
                 }
                 span{
                     padding-left: 10px;
@@ -62,33 +202,15 @@
             }
         }
         .online{
-            .btn-group{
-                button{
-                    border: 1px solid $primary;
-                    border-width: 2px 2px 2px 4px;
-                }
-                button:hover{
-                    border-left: 4px solid $secondary;
-                    background-color: $primary;
-                    color: #FFF;
-                }
-            }
             .img{
-                overflow: hidden;
+                height: auto;
                 img{
                     top: -100%;
                     left: -3%;
                 }
             }
-            .w-100:hover{
-                color: $secondary;
-            }
         }
         .albums1,.albums2{
-            p{
-                top: 0%;
-                letter-spacing: 3.2px;
-            }
             .p1{
                 left: -4.3%;
             }
@@ -99,36 +221,34 @@
         .activity{
             img{
                 height: 272px;
-                object-fit: cover;
-            }
-            h4{
-                transform: translate(-50%, -50%) rotate(-4deg);
-            }
-            li:nth-child(2){
-                h4{
-                    transform: translate(-50%, -50%) rotate(-3deg);
-                }
-            }
-            li:nth-child(even){
-                transform: rotate(-2deg);
-            }
-            li:nth-child(3){
-                transform: rotate(2deg);
             }
         }
         .promote{
-            .mail,.phone,.fb{
-                .bg-primary{
-                    width: 32px;
-                    height: 32px;
-                    line-height: 32px;
-                }
+            button{
+                margin-top: 54px;
             }
-            a:hover{
-                span{
-                    color: $secondary;
-                }
+            input{
+                width: 90.68323%;
             }
         }
+    }
+}
+@include xl{
+    .index{
+        .explore{
+            .more{
+                line-height: 57.75px;
+            }
+        }
+    }
+}
+@include xxl{
+    .index{
+        .explore{
+            .more{
+                line-height: 64px;
+            }
+        }
+
     }
 }

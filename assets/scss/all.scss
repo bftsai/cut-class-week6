@@ -3,23 +3,20 @@
 //custimer
 @import "./utils/variables";
 @import "./utils/variables-dark";
-@import "./utils/maps";
-@import "./base/mixins";
+//original
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+//custimer
 @import "./utils/utilities";
+@import "./base/root";
+@import "./base/reboot";
 //bootstrap 等同於把所有的bs 5 scss 全部載入
 @import "../../node_modules/bootstrap";
 
-
-
+@import "./base/breakpoin_customer";
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 
 @import './pages/index.scss';
 
-body{
-    word-break: break-word;
-    a{
-        display: block;
-    }
-}
