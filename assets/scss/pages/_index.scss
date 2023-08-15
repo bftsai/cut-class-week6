@@ -12,7 +12,6 @@
         }
         .explore{
             .card{
-                background-color: #F3F1E5;
                 padding: 35px 0;
                 &:hover{
                     color: $secondary;
@@ -40,13 +39,25 @@
                     width: 24px;
                     height: 24px;
                 }
-                a{
-                    padding: 0 10px;
-                    &:hover{
-                        color: $primary;
+                a:hover{
+                    color: $primary;
+                    span{
                         background-color: $secondary;
-                        cursor: pointer;
                     }
+                }
+                span{
+                    padding-left: 10px;
+                }
+            }
+            .btn-close{
+                right: 4.819277%;
+            }
+            .modal-body{
+                p{
+                    width: 92.703863%;
+                }
+                button:hover{
+                    color: $secondary;
                 }
             }
         }
@@ -74,9 +85,6 @@
             }
         }
         .albums1,.albums2{
-            .container{
-                //overflow: hidden;
-            }
             p{
                 top: 0%;
                 letter-spacing: 3.2px;
@@ -86,6 +94,40 @@
             }
             .p2{
                 left: -7.5%;
+            }
+        }
+        .activity{
+            img{
+                height: 272px;
+                object-fit: cover;
+            }
+            h4{
+                transform: translate(-50%, -50%) rotate(-4deg);
+            }
+            li:nth-child(2){
+                h4{
+                    transform: translate(-50%, -50%) rotate(-3deg);
+                }
+            }
+            li:nth-child(even){
+                transform: rotate(-2deg);
+            }
+            li:nth-child(3){
+                transform: rotate(2deg);
+            }
+        }
+        .promote{
+            .mail,.phone,.fb{
+                .bg-primary{
+                    width: 32px;
+                    height: 32px;
+                    line-height: 32px;
+                }
+            }
+            a:hover{
+                span{
+                    color: $secondary;
+                }
             }
         }
     }

@@ -98,6 +98,11 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ea97";
 }
 
+.icofont-phone:before
+{
+  content: "\efbb";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {
