@@ -1,0 +1,54 @@
+.even{
+    button{
+        padding: 3px 15px 3px 12px;
+        border-width: 1px 1px 1px 4px;
+        flex-grow: 0 !important;
+        flex-shrink: 0 !important;
+        &:hover{
+            border-width: 0 0 0 4px;
+            border-color: $secondary;
+            color: white;
+            background-color: $primary;
+        }
+    }
+    .card{
+        img{
+            height: 210px;
+            object-fit: cover;
+        }
+    }
+    .card-footer{
+        img{
+            width: 20px;
+            height: 20px;
+        }
+        a:hover{
+            color: $primary;
+            span{
+                padding-left: 10px;
+                background-color: $secondary;
+            }
+        }
+    }
+    .Page{
+        
+    }
+}
+@include lg{
+    .even{
+        button{
+            padding: 3px 23px 3px 20px;
+        }
+        .card{
+            img{
+                height: 255px;
+            }
+        }
+        .card-footer{
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

@@ -40,6 +40,7 @@
             a:hover{
                 color: $primary;
                 span{
+                    padding-left: 10px;
                     background-color: $secondary;
                 }
             }
@@ -175,9 +176,6 @@
                 img{
                     width: 24px;
                     height: 24px;
-                }
-                span{
-                    padding-left: 10px;
                 }
             }
             .btn-close{
