@@ -75,17 +75,8 @@
             }
         }
     }
-    .albums1,.albums2{
-        p{
-            top: 0%;
-            letter-spacing: 3.2px;
-        }
-        .p1{
-            left: -4.3%;
-        }
-        .p2{
-            left: -7.5%;
-        }
+    .swiper-wrapper {
+        transition-timing-function: linear;
     }
     .activity{
         img{
@@ -208,14 +199,6 @@
                     top: -100%;
                     left: -3%;
                 }
-            }
-        }
-        .albums1,.albums2{
-            .p1{
-                left: -4.3%;
-            }
-            .p2{
-                left: -7.5%;
             }
         }
         .activity{
