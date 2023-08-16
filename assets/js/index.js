@@ -2,9 +2,9 @@ $(document).ready(function () {
     //swiper
     const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
-        slidesPerView: "auto", //解決換行
         speed: 3000,
-        loop: true,
+        loop: true, //設置為true 時，swiper 數量需超過slidesPerView 設定數量的兩倍，才能成功
+        slidesPerView: "2", //決定能顯示幾個swiper 
         //loopedSlides: "number", //Defines how many slides before end/beginning it should rearrange (loop) slides. If not specified, defaults to slidesPerView
         //centeredSlides: true, //使swiper 居中
         allowTouchMove: false,
