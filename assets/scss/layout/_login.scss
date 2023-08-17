@@ -1,0 +1,12 @@
+.login{
+    transition: all 1s;
+    padding-bottom: 264px;
+    button:hover{
+        color: $secondary;
+    }
+}
+@include lg{
+    .login{
+        padding-bottom: 175px;
+    }
+}
