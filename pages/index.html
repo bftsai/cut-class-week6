@@ -17,11 +17,11 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="index">
+    <div class="index position-relative">
       <div class="container">
-        <div class="row mt-lg-8">
+        <div class="row mt-4 mt-lg-8">
           <div class="col">
-            <div class="banner pt-4 pb-6 py-lg-6">
+            <div class="banner pt-4 pt-lg-12 pb-6">
               <h1 class="fs-9 fs-lg-2 text-white ps-13 ps-lg-12">19 MAY 2023</h1>
               <p class="fs-15 fs-lg-11 fw-bold text-white text-center">隔牆有耳-沒有草東的派對</p>
               <p class="d-none d-lg-block text-white text-center mt-lg-4 mx-lg-auto">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
@@ -363,9 +363,8 @@
           <p class="fs-14 fs-lg-15 fw-bold text-center">——我也不知道誰說的</p>
         </div>
       </div>
+      <%- include('./layout/footer'); -%>
     </div>
-
-    <%- include('./layout/footer'); -%>
     <!-- <div class="container">
       <a href="iconTemporary.html">ico</a>
     </div> -->
@@ -376,5 +375,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- own js -->
     <script type="module" src="../assets/js/index.js"></script>
+    <script type="module" src="../assets/js/header.js"></script>
   </body>
 </html>

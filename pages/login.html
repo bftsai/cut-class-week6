@@ -17,7 +17,7 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="login pt-6 pt-lg-15">
+    <div class="login pt-6 pt-lg-15 position-relative">
         <div class="container">
             <div class="row flex-lg-column align-items-center">
                 <div class="col-12 col-lg-4">
@@ -39,10 +39,11 @@
                 </div>
             </div>
         </div>
+        <%- include('./layout/footer'); -%>
     </div>
     
-    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/header.js"></script>
   </body>
 </html>

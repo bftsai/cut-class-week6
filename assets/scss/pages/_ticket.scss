@@ -1,4 +1,5 @@
 .exhibition{
+    top: 71px;
     .ticket,.orderPage,.orderTitle,.step1,.step2,.step3{
         transition: all 1s;
     }
@@ -142,6 +143,9 @@
     }
 }
 @include lg{
+    .exhibition{
+        top: 111px;
+    }
     .ticket{
         padding-top: 30px;
         .banner{
