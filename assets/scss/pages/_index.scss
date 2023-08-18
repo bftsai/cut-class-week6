@@ -1,8 +1,18 @@
 .index{
     top: 71px;
     .banner{
-        background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true) center center no-repeat;
-        background-size: cover;
+        .item1{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .item2{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true) center center no-repeat;
+            background-size: cover;
+        }
+        .item3{
+            background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true) center center no-repeat;
+            background-size: cover;
+        }
         h1{
             padding-right: 186px;
         }
