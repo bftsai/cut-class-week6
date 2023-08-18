@@ -5,6 +5,7 @@ $(document).ready(function () {
          $('.orderPage').removeClass('opacity flip');
          $('.orderTitle').removeClass('opacity flip');
          $('.step1').removeClass('opacity flip');
+         $('.check').addClass('d-none');
          //show ticket
          setTimeout(() => {
              $('.ticket').fadeIn(10).removeClass('opacity flip');
@@ -16,6 +17,7 @@ $(document).ready(function () {
         //hide ticket
         $('.ticket').fadeOut(10).addClass('opacity flip');
         //make element block & opacity 0
+        $('.check').removeClass('d-none');
         $('.orderPage').addClass('opacity');
         $('.orderTitle').addClass('opacity');
         $('.step1').addClass('opacity');
