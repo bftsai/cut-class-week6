@@ -13,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Yeseva+One&display=swap" rel="stylesheet">
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    <script type="module" crossorigin src="/cut-class-week6/assets/index-c2a46127.js"></script>
-    <link rel="modulepreload" crossorigin href="/cut-class-week6/assets/main-ddfeab16.js">
-    <link rel="stylesheet" href="/cut-class-week6/assets/main-4ca01713.css">
+    <script type="module" crossorigin src="/cut-class-week6/assets/index-381bac30.js"></script>
+    <link rel="modulepreload" crossorigin href="/cut-class-week6/assets/header-7803bf62.js">
+    <link rel="stylesheet" href="/cut-class-week6/assets/header-febef7e6.css">
     <link rel="stylesheet" href="/cut-class-week6/assets/icofont-0b658e8f.css">
   </head>
   <body>
-    <div class="header py-3 py-lg-6 border-bottom border-3 border-primary position-relative">
+    <div class="header position-fixed start-50 top-0 translate-middle-x z-3 py-3 py-lg-6 border-bottom border-3 border-primary w-100">
     <div class="container d-flex align-items-center justify-content-between">
         <a href="index.html" class="d-lg-flex align-items-lg-center me-lg-12">
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo pic" class="logo me-lg-4">
@@ -29,7 +29,7 @@
             <input type="text" class="form-control border-primary border-2 py-2 ps-3 py-lg-4 ps-lg-6" placeholder="探索活動" aria-label="Username" aria-describedby="basic-addon1">
             <span class="input-group-text border-primary border-2 bg-primary text-secondary icofont-search-1" id="basic-addon1"></span>
         </div>
-        <button type="button" class="icofont-dart icofont-navigation-menu d-md-none btn px-3 py-1 border border-primary rounded-1" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-expanded="false" aria-controls="collapseExample"></button>
+        <button type="button" class="icofont-dart icofont-navigation-menu d-md-none btn px-3 py-1 border border-primary rounded-1"></button>
         <div class="d-none d-md-flex ms-md-auto">
             <a href="#">
                 <span class="icofont-ui-file"></span>
@@ -41,24 +41,24 @@
             </a>
         </div>
     </div>
-    <div class="collapse d-md-none position-absolute w-100 py-6 border-bottom border-3 border-primary" id="headerMenu">
+    <div class="collapse-customer d-none d-md-none position-fixed w-100 border-bottom border-3 border-primary ">
         <div class="container">
-            <a href="#" class="mb-4">
+            <a href="#" class="pb-2 pt-6">
                 <span class="icofont-ui-file"></span>
                 REGISTER
             </a>
-            <a href="login.html">
+            <a href="login.html" class="pt-2 pb-6">
                 <span class="icofont-ui-user"></span>
                 LOGIN
             </a>
         </div>
     </div>
 </div>
-    <div class="index">
+    <div class="index position-relative">
       <div class="container">
-        <div class="row mt-lg-8">
+        <div class="row mt-4 mt-lg-8">
           <div class="col">
-            <div class="banner pt-4 pb-6 py-lg-6">
+            <div class="banner pt-4 pt-lg-12 pb-6">
               <h1 class="fs-9 fs-lg-2 text-white ps-13 ps-lg-12">19 MAY 2023</h1>
               <p class="fs-15 fs-lg-11 fw-bold text-white text-center">隔牆有耳-沒有草東的派對</p>
               <p class="d-none d-lg-block text-white text-center mt-lg-4 mx-lg-auto">你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
@@ -400,13 +400,12 @@
           <p class="fs-14 fs-lg-15 fw-bold text-center">——我也不知道誰說的</p>
         </div>
       </div>
-    </div>
-
-    <div class="footer fs-14 fs-md-13 py-6 py-md-8 border-top border-3 border-primary">
+      <div class="footer fs-14 fs-md-13 py-6 py-md-8 border-top border-3 border-primary">
     <div class="container">
         <p class="text-center">© 7TAO七逃. All Rights Reserved</p>
     </div>
-</div>    <!-- <div class="container">
+</div>    </div>
+    <!-- <div class="container">
       <a href="iconTemporary.html">ico</a>
     </div> -->
     
@@ -415,6 +414,7 @@
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- own js -->
+    
     
   </body>
 </html>

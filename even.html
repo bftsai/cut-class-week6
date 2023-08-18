@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Yeseva+One&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/cut-class-week6/assets/even-6c4203ba.js"></script>
-    <link rel="modulepreload" crossorigin href="/cut-class-week6/assets/main-ddfeab16.js">
-    <link rel="stylesheet" href="/cut-class-week6/assets/main-4ca01713.css">
+    <script type="module" crossorigin src="/cut-class-week6/assets/even-648e4f65.js"></script>
+    <link rel="modulepreload" crossorigin href="/cut-class-week6/assets/header-7803bf62.js">
+    <link rel="stylesheet" href="/cut-class-week6/assets/header-febef7e6.css">
     <link rel="stylesheet" href="/cut-class-week6/assets/icofont-0b658e8f.css">
   </head>
   <body>
-    <div class="header py-3 py-lg-6 border-bottom border-3 border-primary position-relative">
+    <div class="header position-fixed start-50 top-0 translate-middle-x z-3 py-3 py-lg-6 border-bottom border-3 border-primary w-100">
     <div class="container d-flex align-items-center justify-content-between">
         <a href="index.html" class="d-lg-flex align-items-lg-center me-lg-12">
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo pic" class="logo me-lg-4">
@@ -27,7 +27,7 @@
             <input type="text" class="form-control border-primary border-2 py-2 ps-3 py-lg-4 ps-lg-6" placeholder="探索活動" aria-label="Username" aria-describedby="basic-addon1">
             <span class="input-group-text border-primary border-2 bg-primary text-secondary icofont-search-1" id="basic-addon1"></span>
         </div>
-        <button type="button" class="icofont-dart icofont-navigation-menu d-md-none btn px-3 py-1 border border-primary rounded-1" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-expanded="false" aria-controls="collapseExample"></button>
+        <button type="button" class="icofont-dart icofont-navigation-menu d-md-none btn px-3 py-1 border border-primary rounded-1"></button>
         <div class="d-none d-md-flex ms-md-auto">
             <a href="#">
                 <span class="icofont-ui-file"></span>
@@ -39,20 +39,20 @@
             </a>
         </div>
     </div>
-    <div class="collapse d-md-none position-absolute w-100 py-6 border-bottom border-3 border-primary" id="headerMenu">
+    <div class="collapse-customer d-none d-md-none position-fixed w-100 border-bottom border-3 border-primary ">
         <div class="container">
-            <a href="#" class="mb-4">
+            <a href="#" class="pb-2 pt-6">
                 <span class="icofont-ui-file"></span>
                 REGISTER
             </a>
-            <a href="login.html">
+            <a href="login.html" class="pt-2 pb-6">
                 <span class="icofont-ui-user"></span>
                 LOGIN
             </a>
         </div>
     </div>
 </div>
-    <div class="even pt-4 pt-lg-8">
+    <div class="even pt-4 pt-lg-8 position-relative">
       <div class="container d-flex flex-column align-items-center">
         <div class="row">
           <div class="col-12">
@@ -279,7 +279,7 @@
               </div>
             </div>
           </div>
-          <div class="col mb-6 mb-lg-12">
+          <div class="col mb-8 mb-lg-15">
             <div class="card h-100 border-0 border-bottom border-2 border-primary">
               <p class="card-date fs-9 fs-lg-7 fs-xl-5 fw-bold border-bottom border-primary border-2 pb-2 pb-lg-3 mb-4 mb-lg-3">9 July 2023</p>
               <a href="./ticket.html">
@@ -317,7 +317,7 @@
           </div>
         </div>
         <nav aria-label="Page navigation mx-auto">
-          <ul class="pagination">
+          <ul class="pagination mb-12 mb-lg-15">
             <li class="page-item mx-1">
               <a class="page-link border-primary" href="#" aria-label="Previous">
                 <span class="icofont-arrow-left" aria-hidden="true"></span>
@@ -336,17 +336,18 @@
           </ul>
         </nav>
       </div>
-    </div>
-
-    <div class="footer fs-14 fs-md-13 py-6 py-md-8 border-top border-3 border-primary">
+      <div class="footer fs-14 fs-md-13 py-6 py-md-8 border-top border-3 border-primary">
     <div class="container">
         <p class="text-center">© 7TAO七逃. All Rights Reserved</p>
     </div>
-</div>    
+</div>    </div>
+
+    
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- own js -->
+    
     
   </body>
 </html>
