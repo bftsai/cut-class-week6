@@ -12,6 +12,7 @@
 @import "./base/reboot";
 //bootstrap 等同於把所有的bs 5 scss 全部載入
 @import "../../node_modules/bootstrap";
+@import "../node_modules/bootstrap/scss/forms";
 
 @import "./base/breakpoin_customer";
 @import './layout/header.scss';
